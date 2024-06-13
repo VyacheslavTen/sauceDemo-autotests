@@ -3,6 +3,7 @@ package saucedemo;
 import org.example.config.Environment;
 import org.example.extensions.Singleton;
 import org.example.pages.LoginPage;
+import org.example.pages.Pages;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -21,8 +22,12 @@ public class CartListTest extends Singleton{
 
     @Test
     public void successfulLogin() {
-        //login.login(correctUserName, correctPassword);
+        Pages.login.login(correctUserName, correctPassword)
+                .isInventoryListVisible();
+        Pages.inventoryList.addItemsToCart()
+                .isCartListVisible();
+        boolean isCheckoutVisible = Pages.cartList.clickCheckout().isCheckoutVisible();
 
-        assertTrue(Singleton.get().findElement(By.cssSelector("div.inventory_list")).isDisplayed());
+        assertTrue(isCheckoutVisible);
     }
 }

@@ -8,4 +8,6 @@ public class Pages {
 
     public static CartPage cartList = new CartPage();
 
+    public static CheckoutPage checkoutPage = new CheckoutPage();
+
 }

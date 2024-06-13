@@ -23,3 +23,5 @@ Z
 -src/main/java/org/example/pages/CartPage.java,c\c\cc567e13ddb518e2453baeb38d6cd6a8359772aa
 Y
 )src/test/java/saucedemo/CartListTest.java,1\4\14cef9579878c807a6b77af2dea14051b5626d7c
+a
+1src/main/java/org/example/pages/CheckoutPage.java,e\3\e345fac7da5b6c085701ee89d876f5deda9fda9d

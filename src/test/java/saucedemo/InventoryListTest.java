@@ -22,11 +22,11 @@ public class InventoryListTest extends Singleton{
 
     @Test
     public void successfullAddItems() {
-        boolean isListVisible = Pages.login.login(correctUserName, correctPassword)
+        Pages.login.login(correctUserName, correctPassword)
                 .isInventoryListVisible();
         boolean isCartVisible = Pages.inventoryList.addItemsToCart()
                 .isCartListVisible();
 
-        assertTrue(Singleton.get().findElement(By.cssSelector("div.cart_list")).isDisplayed());
+        assertTrue(isCartVisible);
     }
 }
