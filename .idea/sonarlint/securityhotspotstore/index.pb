@@ -3,8 +3,6 @@
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 S
 #src/main/java/org/example/Main.java,0\b\0ba1b9c7a4878802f938e331cc2d8a042087ec6b
-Y
-)src/main/java/org/example/extensions.java,0\a\0a72a5d1bcf37dae45d297774a92db786294859d
 c
 3src/main/java/org/example/extensions/Singleton.java,f\8\f8280fc49a51814acb8dd4dd948fa0e5518b2160
 a
